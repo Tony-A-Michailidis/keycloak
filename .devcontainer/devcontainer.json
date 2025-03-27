@@ -1,0 +1,15 @@
+{
+    "name": "Keycloak Dev Container",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "keycloak",
+    "workspaceFolder": "/workspace",
+    "forwardPorts": [8080],
+    "postCreateCommand": "echo 'Keycloak started on port 8080'",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-azuretools.vscode-docker"
+            ]
+        }
+    }
+}
